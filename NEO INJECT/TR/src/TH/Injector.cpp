@@ -1,3 +1,11 @@
+/*
+    This software is owned by Mehmet Tezel.
+    You can change and use as you wish.
+    (Provided that the source is specified)
+    https://github.com/TzLcorp
+    TezeL Corporation
+*/
+
 #include <Windows.h>
 #include <iostream>
 #include <fstream>
@@ -83,7 +91,7 @@ int main() {
 
     if (dllName[dllLength - 4] != '.' || dllName[dllLength - 3] != 'd' || dllName[dllLength - 2] != 'l' || dllName[dllLength - 1] != 'l')
     {
-        int click = MessageBoxA(NULL, "Dosya, \".dll\" uzantýlý olmalý!", what.c_str(), MB_RETRYCANCEL | MB_ICONERROR);
+        int click = MessageBoxA(NULL, "Dosya, \".dll\" uzantÃ½lÃ½ olmalÃ½!", what.c_str(), MB_RETRYCANCEL | MB_ICONERROR);
         switch (click)
         {
         case IDRETRY:
@@ -131,7 +139,7 @@ int main() {
 
     if (app[appLength - 4] != '.' || app[appLength - 3] != 'e' || app[appLength - 2] != 'x' || app[appLength - 1] != 'e')
     {
-        int click = MessageBoxA(NULL, "Dosya, \".exe\" uzantýlý olmalý!", what2.c_str(), MB_RETRYCANCEL | MB_ICONERROR);
+        int click = MessageBoxA(NULL, "Dosya, \".exe\" uzantÃ½lÃ½ olmalÃ½!", what2.c_str(), MB_RETRYCANCEL | MB_ICONERROR);
         switch (click)
         {
         case IDRETRY:
